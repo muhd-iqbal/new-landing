@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muhamad Iqbal – Senior Laravel Developer</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bg: '#0d1117',
+            panel: '#161b22',
+            border: '#30363d',
+            text: '#c9d1d9',
+            muted: '#8b949e',
+            accent: '#2f81f7',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-bg text-text">
+  <div class="max-w-7xl mx-auto p-6 grid grid-cols-1 lg:grid-cols-[280px_1fr] gap-6">
+
+    <!-- Sidebar -->
+    <aside class="bg-panel border border-border rounded-lg p-5 h-fit lg:sticky lg:top-6">
+      <!-- Replace image path -->
+      <img src="avatar.png" alt="Muhamad Iqbal"
+           class="w-full rounded-full mb-4" />
+
+      <h2 class="text-xl font-semibold">Muhamad Iqbal</h2>
+      <p class="text-muted text-sm mb-3">Senior Laravel Developer</p>
+
+      <p class="text-sm mb-4">
+        Backend-focused engineer building reliable, scalable production systems.
+      </p>
+
+      <ul class="text-sm space-y-2 text-muted">
+        <li>📍 Sungai Petani, Kedah</li>
+        <li>📧 work@iqbal.my</li>
+        <li>🐙 github.com/muhd-iqbal</li>
+        <li>💼 linkedin.com/in/muhamad-iqbal</li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="space-y-6">
+
+      <!-- Intro -->
+      <section class="bg-panel border border-border rounded-lg p-6">
+        <h1 class="text-2xl font-bold mb-3">Hi, I'm Iqbal 👋</h1>
+        <p class="mb-2">
+          Senior Laravel Developer with 5+ years of experience owning backend systems,
+          scaling applications across 23+ VPS servers, and automating CI/CD pipelines.
+        </p>
+        <p>
+          I focus on system reliability, clean backend architecture,
+          and software that survives real production traffic.
+        </p>
+      </section>
+
+      <!-- Tech Stack -->
+      <section class="bg-panel border border-border rounded-lg p-6">
+        <h3 class="font-semibold mb-4 border-b border-border pb-2">🧰 Tech Stack</h3>
+        <div class="flex flex-wrap gap-2">
+          <span class="px-3 py-1 rounded-full bg-bg border border-border text-sm">Laravel</span>
+          <span class="px-3 py-1 rounded-full bg-bg border border-border text-sm">PHP</span>
+          <span class="px-3 py-1 rounded-full bg-bg border border-border text-sm">MySQL</span>
+          <span class="px-3 py-1 rounded-full bg-bg border border-border text-sm">Redis</span>
+          <span class="px-3 py-1 rounded-full bg-bg border border-border text-sm">NGINX</span>
+          <span class="px-3 py-1 rounded-full bg-bg border border-border text-sm">Linux</span>
+          <span class="px-3 py-1 rounded-full bg-bg border border-border text-sm">GitLab CI/CD</span>
+          <span class="px-3 py-1 rounded-full bg-bg border border-border text-sm">RunCloud</span>
+          <span class="px-3 py-1 rounded-full bg-bg border border-border text-sm">n8n</span>
+          <span class="px-3 py-1 rounded-full bg-bg border border-border text-sm">MongoDB</span>
+          <span class="px-3 py-1 rounded-full bg-bg border border-border text-sm">Tailwind</span>
+          <span class="px-3 py-1 rounded-full bg-bg border border-border text-sm">FilamentPHP</span>
+        </div>
+      </section>
+
+      <!-- Experience -->
+      <section class="bg-panel border border-border rounded-lg p-6">
+        <h3 class="font-semibold mb-4 border-b border-border pb-2">💼 Experience</h3>
+
+        <div class="mb-5">
+          <h4 class="font-medium">Senior Software Developer — G2R Sdn. Bhd.</h4>
+          <p class="text-muted text-sm mb-2">Jul 2025 – Present</p>
+          <ul class="list-disc list-inside space-y-1 text-sm">
+            <li>Built multi-tenant Laravel SaaS ERP with RBAC</li>
+            <li>Led a team of 2 developers</li>
+            <li>Migrated FTP deployments to GitLab CI/CD (−50% deploy time)</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-medium">HoU Software Developer — EMZI Technologies</h4>
+          <p class="text-muted text-sm mb-2">Sep 2022 – Jul 2025</p>
+          <ul class="list-disc list-inside space-y-1 text-sm">
+            <li>Led 4 developers maintaining 30+ internal Laravel apps</li>
+            <li>Owned 23+ VPS servers with 99.9% uptime</li>
+            <li>Introduced n8n automation (−60% manual API work)</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Featured Projects -->
+      <section class="bg-panel border border-border rounded-lg p-6">
+        <h3 class="font-semibold mb-4 border-b border-border pb-2">📌 Featured Projects</h3>
+
+        <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <div class="bg-bg border border-border rounded-lg p-4">
+            <h4 class="font-medium mb-1">SaaS ERP Platform</h4>
+            <p class="text-sm mb-2">
+              Multi-tenant ERP with CI/CD, RBAC, and production monitoring.
+            </p>
+            <p class="text-xs text-muted">Laravel · MySQL · Redis</p>
+          </div>
+
+          <div class="bg-bg border border-border rounded-lg p-4">
+            <h4 class="font-medium mb-1">Internal Ops Suite</h4>
+            <p class="text-sm mb-2">
+              30+ internal systems supporting HR, logistics, sales, and finance.
+            </p>
+            <p class="text-xs text-muted">Laravel · VPS · NGINX</p>
+          </div>
+
+          <div class="bg-bg border border-border rounded-lg p-4 opacity-60 italic">
+            <h4 class="font-medium mb-1">🚧 Future Case Study</h4>
+            <p class="text-sm">Add architecture deep-dive later.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- System Ownership -->
+      <section class="bg-panel border border-border rounded-lg p-6">
+        <h3 class="font-semibold mb-4 border-b border-border pb-2">🖥️ System Ownership</h3>
+        <ul class="list-disc list-inside space-y-1 text-sm">
+          <li>Managed Ubuntu VPS infrastructure</li>
+          <li>Handled Redis queues & background workers</li>
+          <li>Designed CI/CD pipelines using GitLab</li>
+          <li>Responsible for production uptime & incidents</li>
+        </ul>
+      </section>
+
+      <!-- Metrics -->
+      <section class="bg-panel border border-border rounded-lg p-6">
+        <h3 class="font-semibold mb-4 border-b border-border pb-2">📊 By the Numbers</h3>
+
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center">
+          <div class="bg-bg border border-border rounded-lg p-3">
+            <strong class="text-lg">5+</strong>
+            <p class="text-xs text-muted">Years</p>
+          </div>
+          <div class="bg-bg border border-border rounded-lg p-3">
+            <strong class="text-lg">30+</strong>
+            <p class="text-xs text-muted">Apps</p>
+          </div>
+          <div class="bg-bg border border-border rounded-lg p-3">
+            <strong class="text-lg">23+</strong>
+            <p class="text-xs text-muted">VPS</p>
+          </div>
+          <div class="bg-bg border border-border rounded-lg p-3">
+            <strong class="text-lg">99.9%</strong>
+            <p class="text-xs text-muted">Uptime</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Notes -->
+      <section class="bg-panel border border-border rounded-lg p-6">
+        <h3 class="font-semibold mb-2 border-b border-border pb-2">✍️ Notes & Writings</h3>
+        <p class="text-sm italic text-muted">
+          Placeholder for future posts: postmortems, architecture notes,
+          Laravel tips, CI/CD lessons learned.
+        </p>
+      </section>
+
+      <footer class="text-center text-xs text-muted py-4">
+        Built like a README. No buzzwords.
+      </footer>
+
+    </main>
+  </div>
+</body>
+</html>

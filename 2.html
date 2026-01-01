@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muhamad Iqbal – Senior Laravel Developer</title>
+
+  <style>
+    :root {
+      --bg: #0d1117;
+      --panel: #161b22;
+      --border: #30363d;
+      --text: #c9d1d9;
+      --muted: #8b949e;
+      --accent: #2f81f7;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+                   Roboto, Ubuntu, Cantarell, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 24px;
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 24px;
+    }
+
+    /* Sidebar */
+    aside {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 20px;
+      height: fit-content;
+      position: sticky;
+      top: 24px;
+    }
+
+    .avatar {
+      width: 100%;
+      border-radius: 50%;
+      margin-bottom: 16px;
+    }
+
+    aside h2 {
+      margin: 0 0 4px;
+    }
+
+    .role {
+      color: var(--muted);
+      margin-bottom: 12px;
+    }
+
+    .bio {
+      font-size: 14px;
+      margin-bottom: 16px;
+    }
+
+    .meta {
+      list-style: none;
+      padding: 0;
+      font-size: 14px;
+    }
+
+    .meta li {
+      margin-bottom: 8px;
+      color: var(--muted);
+    }
+
+    /* Main content */
+    main section {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 24px;
+    }
+
+    main h1 {
+      margin-top: 0;
+      font-size: 28px;
+    }
+
+    main h3 {
+      margin-top: 0;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 8px;
+    }
+
+    .badges span {
+      display: inline-block;
+      background: #21262d;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 6px 12px;
+      margin: 4px;
+      font-size: 13px;
+    }
+
+    .job {
+      margin-bottom: 20px;
+    }
+
+    .job h4 {
+      margin: 0;
+    }
+
+    .job small {
+      color: var(--muted);
+    }
+
+    .job ul {
+      margin: 8px 0 0;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 16px;
+    }
+
+    .card {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 16px;
+      background: #0d1117;
+    }
+
+    .card.placeholder {
+      opacity: 0.6;
+      font-style: italic;
+    }
+
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 12px;
+      list-style: none;
+      padding: 0;
+    }
+
+    .metrics li {
+      background: #0d1117;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 12px;
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+      padding: 16px;
+    }
+
+    @media (max-width: 900px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+      aside {
+        position: static;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Sidebar -->
+  <aside>
+    <!-- Replace with your image path -->
+    <img src="avatar.png" alt="Muhamad Iqbal" class="avatar" />
+
+    <h2>Muhamad Iqbal</h2>
+    <div class="role">Senior Laravel Developer</div>
+
+    <p class="bio">
+      Backend-focused engineer building reliable, scalable production systems.
+    </p>
+
+    <ul class="meta">
+      <li>📍 Sungai Petani, Kedah</li>
+      <li>📧 work@iqbal.my</li>
+      <li>🐙 github.com/muhd-iqbal</li>
+      <li>💼 linkedin.com/in/muhamad-iqbal</li>
+    </ul>
+  </aside>
+
+  <!-- Main -->
+  <main>
+
+    <section>
+      <h1>Hi, I'm Iqbal 👋</h1>
+      <p>
+        Senior Laravel Developer with 5+ years of experience owning backend systems,
+        scaling applications across 23+ VPS servers, and automating CI/CD pipelines.
+      </p>
+      <p>
+        I focus on system reliability, clean backend architecture,
+        and software that survives real production traffic.
+      </p>
+    </section>
+
+    <section>
+      <h3>🧰 Tech Stack</h3>
+      <div class="badges">
+        <span>Laravel</span>
+        <span>PHP</span>
+        <span>MySQL</span>
+        <span>Redis</span>
+        <span>NGINX</span>
+        <span>Linux</span>
+        <span>GitLab CI/CD</span>
+        <span>RunCloud</span>
+        <span>n8n</span>
+        <span>MongoDB</span>
+        <span>Tailwind</span>
+        <span>FilamentPHP</span>
+      </div>
+    </section>
+
+    <section>
+      <h3>💼 Experience</h3>
+
+      <div class="job">
+        <h4>Senior Software Developer — G2R Sdn. Bhd.</h4>
+        <small>Jul 2025 – Present</small>
+        <ul>
+          <li>Built multi-tenant Laravel SaaS ERP with RBAC</li>
+          <li>Led a team of 2 developers</li>
+          <li>Migrated FTP deployments to GitLab CI/CD (−50% deploy time)</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <h4>HoU Software Developer — EMZI Technologies</h4>
+        <small>Sep 2022 – Jul 2025</small>
+        <ul>
+          <li>Led 4 developers maintaining 30+ internal Laravel apps</li>
+          <li>Owned 23+ VPS servers with 99.9% uptime</li>
+          <li>Introduced n8n automation (−60% manual API work)</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h3>📌 Featured Projects</h3>
+      <div class="cards">
+        <div class="card">
+          <h4>SaaS ERP Platform</h4>
+          <p>Multi-tenant ERP with CI/CD, RBAC, and production monitoring.</p>
+          <small>Laravel · MySQL · Redis</small>
+        </div>
+
+        <div class="card">
+          <h4>Internal Ops Suite</h4>
+          <p>30+ internal systems supporting HR, logistics, sales, and finance.</p>
+          <small>Laravel · VPS · NGINX</small>
+        </div>
+
+        <div class="card placeholder">
+          <h4>🚧 Future Case Study</h4>
+          <p>Add architecture deep-dive later.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h3>🖥️ System Ownership</h3>
+      <ul>
+        <li>Managed Ubuntu VPS infrastructure</li>
+        <li>Handled Redis queues & background workers</li>
+        <li>Designed CI/CD pipelines using GitLab</li>
+        <li>Responsible for production uptime & incidents</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>📊 By the Numbers</h3>
+      <ul class="metrics">
+        <li><strong>5+ years</strong><br/>Experience</li>
+        <li><strong>30+</strong><br/>Applications</li>
+        <li><strong>23+</strong><br/>VPS Servers</li>
+        <li><strong>99.9%</strong><br/>Uptime</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>✍️ Notes & Writings</h3>
+      <p class="placeholder">
+        Placeholder for future posts: postmortems, architecture notes,
+        Laravel tips, CI/CD lessons learned.
+      </p>
+    </section>
+
+    <footer>
+      Built like a README. No buzzwords.
+    </footer>
+
+  </main>
+
+</div>
+
+</body>
+</html>
