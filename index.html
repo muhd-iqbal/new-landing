@@ -124,14 +124,14 @@
                         <!-- CTA Buttons -->
                         <div class="flex gap-4 mb-12 flex-wrap">
                             <a href="#contact" 
-                               class="inline-flex items-center gap-2 px-6 py-3 bg-accent-green text-bg-primary font-semibold text-sm rounded-md hover:bg-green-500 hover:-translate-y-1 hover:shadow-lg hover:shadow-accent-green/30 transition-all">
+                               class="inline-flex items-center gap-2 px-6 py-3 bg-bg-tertiary text-text-primary font-semibold text-sm rounded-md hover:bg-bg-secondary hover:-translate-y-1 hover:shadow-lg hover:shadow-accent-blue/30 transition-all">
                                 <svg class="w-4 h-4" viewBox="0 0 16 16" fill="currentColor">
                                     <path d="M1.75 2A1.75 1.75 0 000 3.75v8.5C0 13.216.784 14 1.75 14h12.5A1.75 1.75 0 0016 12.25v-8.5A1.75 1.75 0 0014.25 2H1.75z"/>
                                 </svg>
                                 Get in Touch
                             </a>
                             <!-- PLACEHOLDER: Add link to your resume/CV PDF -->
-                            <a href="#" 
+                            <a href="/resume.pdf" download
                                class="inline-flex items-center gap-2 px-6 py-3 bg-bg-secondary text-text-primary border border-border-color font-semibold text-sm rounded-md hover:bg-bg-tertiary hover:border-accent-blue transition-all">
                                 <svg class="w-4 h-4" viewBox="0 0 16 16" fill="currentColor">
                                     <path d="M4.75 8.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 114.5 0 2.25 2.25 0 01-4.5 0zM8 10a.75.75 0 100 1.5.75.75 0 000-1.5zM5.5 10.75a2.5 2.5 0 115 0 2.5 2.5 0 01-5 0z"/>
@@ -332,8 +332,24 @@
                     <!-- Project Card 2 -->
                     <div class="project-card relative bg-bg-secondary border border-border-color rounded-xl p-6 hover:border-accent-blue hover:-translate-y-1 hover:shadow-lg hover:shadow-accent-blue/20 transition-all cursor-pointer overflow-hidden">
                         <div class="flex justify-between items-start mb-4">
-                            <svg class="w-5 h-5 text-accent-blue" viewBox="0 0 16 16" fill="currentColor">
-                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                            <svg class="w-5 h-5" viewBox="0 0 160 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Left nodes and connections -->
+                                <circle cx="20" cy="60" r="8" fill="#EA4B71" stroke="#EA4B71" stroke-width="2"/>
+                                <circle cx="50" cy="30" r="8" fill="#EA4B71" stroke="#EA4B71" stroke-width="2"/>
+                                <circle cx="80" cy="60" r="8" fill="#EA4B71" stroke="#EA4B71" stroke-width="2"/>
+                                <circle cx="50" cy="90" r="8" fill="#EA4B71" stroke="#EA4B71" stroke-width="2"/>
+                                
+                                <!-- Right node (branching) -->
+                                <circle cx="140" cy="35" r="8" fill="#EA4B71" stroke="#EA4B71" stroke-width="2"/>
+                                <circle cx="140" cy="85" r="8" fill="#EA4B71" stroke="#EA4B71" stroke-width="2"/>
+                                
+                                <!-- Connection lines -->
+                                <line x1="28" y1="60" x2="42" y2="38" stroke="#EA4B71" stroke-width="2" stroke-linecap="round"/>
+                                <line x1="28" y1="60" x2="42" y2="82" stroke="#EA4B71" stroke-width="2" stroke-linecap="round"/>
+                                <line x1="58" y1="30" x2="72" y2="60" stroke="#EA4B71" stroke-width="2" stroke-linecap="round"/>
+                                <line x1="58" y1="90" x2="72" y2="60" stroke="#EA4B71" stroke-width="2" stroke-linecap="round"/>
+                                <line x1="88" y1="60" x2="132" y2="35" stroke="#EA4B71" stroke-width="2" stroke-linecap="round"/>
+                                <line x1="88" y1="60" x2="132" y2="85" stroke="#EA4B71" stroke-width="2" stroke-linecap="round"/>
                             </svg>
                         </div>
                         <h4 class="text-lg font-bold text-text-primary mb-2">n8n-Based Workflow Automation Platform</h4>
@@ -395,7 +411,7 @@
                     <div class="project-card relative bg-bg-secondary border border-border-color rounded-xl p-6 hover:border-accent-blue hover:-translate-y-1 hover:shadow-lg hover:shadow-accent-blue/20 transition-all cursor-pointer overflow-hidden">
                         <div class="flex justify-between items-start mb-4">
                             <svg class="w-5 h-5 text-accent-blue" viewBox="0 0 16 16" fill="currentColor">
-                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                                <path d="M2 1a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h1v6a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-6h1a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5H2zm2.5 4a.5.5 0 0 1 1 0v4a.5.5 0 0 1-1 0V5zm3 0a.5.5 0 0 1 1 0v4a.5.5 0 0 1-1 0V5zm3 0a.5.5 0 0 1 1 0v4a.5.5 0 0 1-1 0V5z"/>
                             </svg>
                         </div>
                         <h4 class="text-lg font-bold text-text-primary mb-2">Multi-Courier Fulfilment & Tracking Platform</h4>
@@ -412,7 +428,7 @@
                     <div class="project-card relative bg-bg-secondary border border-border-color rounded-xl p-6 hover:border-accent-blue hover:-translate-y-1 hover:shadow-lg hover:shadow-accent-blue/20 transition-all cursor-pointer overflow-hidden">
                         <div class="flex justify-between items-start mb-4">
                             <svg class="w-5 h-5 text-accent-blue" viewBox="0 0 16 16" fill="currentColor">
-                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                                <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v5h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1v1a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-1a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1V2zm1 5a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1H3z"/>
                             </svg>
                         </div>
                         <h4 class="text-lg font-bold text-text-primary mb-2">Printing ERP & Workflow Management</h4>
@@ -441,7 +457,7 @@
                     </p>
                     <div class="flex gap-4 justify-center flex-wrap">
                         <a href="mailto:work@iqbal.my" 
-                           class="inline-flex items-center gap-2 px-6 py-3 bg-accent-green text-bg-primary font-semibold text-sm rounded-md hover:bg-green-500 hover:-translate-y-1 hover:shadow-lg hover:shadow-accent-green/30 transition-all">
+                           class="inline-flex items-center gap-2 px-6 py-3 bg-bg-tertiary text-text-primary border border-border-color font-semibold text-sm rounded-md hover:bg-bg-secondary hover:border-accent-blue transition-all">
                             <svg class="w-4 h-4" viewBox="0 0 16 16" fill="currentColor">
                                 <path d="M1.75 2A1.75 1.75 0 000 3.75v8.5C0 13.216.784 14 1.75 14h12.5A1.75 1.75 0 0016 12.25v-8.5A1.75 1.75 0 0014.25 2H1.75z"/>
                             </svg>
