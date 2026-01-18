@@ -9,21 +9,37 @@
     
     <!-- Header Navigation -->
     <header class="sticky top-0 z-50 border-b border-border-color backdrop-blur-xl bg-bg-primary/80 animate-slide-down">
-        <div class="max-w-7xl mx-auto px-6 py-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 py-4 sm:py-6">
             <nav class="flex justify-between items-center">
-                <div class="flex items-center gap-2 text-xl font-bold font-mono">
+                <div class="flex items-center gap-2 text-lg sm:text-xl font-bold font-mono">
                     <div class="w-8 h-8 bg-gradient-to-br from-accent-blue to-accent-purple rounded-md flex items-center justify-center text-lg">
                         MI
                     </div>
-                    <span>Muhamad Iqbal</span>
+                    <span class="hidden xs:inline">Muhamad Iqbal</span>
                 </div>
-                <ul class="flex gap-8 text-sm font-semibold">
+                <!-- Desktop Navigation -->
+                <ul class="hidden md:flex gap-6 lg:gap-8 text-sm font-semibold">
                     <li><a href="#about" class="nav-link relative text-text-secondary hover:text-text-primary transition-colors">About</a></li>
                     <li><a href="#experience" class="nav-link relative text-text-secondary hover:text-text-primary transition-colors">Experience</a></li>
                     <li><a href="#projects" class="nav-link relative text-text-secondary hover:text-text-primary transition-colors">Projects</a></li>
                     <li><a href="#contact" class="nav-link relative text-text-secondary hover:text-text-primary transition-colors">Contact</a></li>
                 </ul>
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden p-2 text-text-primary hover:text-accent-blue transition-colors" aria-label="Toggle menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
             </nav>
+            <!-- Mobile Navigation Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 border-t border-border-color pt-4">
+                <ul class="flex flex-col gap-4 text-sm font-semibold">
+                    <li><a href="#about" class="nav-link-mobile text-text-secondary hover:text-text-primary transition-colors block py-2">About</a></li>
+                    <li><a href="#experience" class="nav-link-mobile text-text-secondary hover:text-text-primary transition-colors block py-2">Experience</a></li>
+                    <li><a href="#projects" class="nav-link-mobile text-text-secondary hover:text-text-primary transition-colors block py-2">Projects</a></li>
+                    <li><a href="#contact" class="nav-link-mobile text-text-secondary hover:text-text-primary transition-colors block py-2">Contact</a></li>
+                </ul>
+            </div>
         </div>
     </header>
 
@@ -31,7 +47,7 @@
         <div class="max-w-7xl mx-auto px-6">
             
             <!-- Hero Section -->
-            <section id="about" class="grid lg:grid-cols-[300px_1fr] gap-12 py-20 animate-fade-in-up">
+            <section id="about" class="grid grid-cols-1 lg:grid-cols-[300px_1fr] gap-8 lg:gap-12 py-12 sm:py-16 lg:py-20 animate-fade-in-up">
                 
                 <!-- Profile Card -->
                 <div class="relative">
@@ -46,8 +62,8 @@
                     
                     <!-- Profile Info -->
                     <div class="lg:text-left text-center">
-                        <h1 class="text-3xl font-bold mb-1">Muhamad Iqbal</h1>
-                        <p class="text-lg text-text-secondary mb-4">Senior Laravel Developer</p>
+                        <h1 class="text-2xl sm:text-3xl font-bold mb-1">Muhamad Iqbal</h1>
+                        <p class="text-base sm:text-lg text-text-secondary mb-4">Senior Laravel Developer</p>
                         
                         <p class="text-sm text-text-secondary leading-relaxed mb-6">
                             <!-- PLACEHOLDER: Add your personal tagline or elevator pitch here -->
@@ -104,11 +120,11 @@
                 <!-- Main Content -->
                 <div class="space-y-8">
                     <div>
-                        <h2 class="text-5xl font-bold mb-6 bg-gradient-to-r from-text-primary to-accent-blue bg-clip-text text-transparent">
+                        <h2 class="text-4xl sm:text-5xl font-bold mb-4 sm:mb-6 bg-gradient-to-r from-text-primary to-accent-blue bg-clip-text text-transparent">
                             Hi 👋, I'm Muhamad Iqbal
                         </h2>
                         
-                        <p class="text-lg text-text-secondary leading-relaxed mb-6">
+                        <p class="text-base sm:text-lg text-text-secondary leading-relaxed mb-4 sm:mb-6">
                             I'm a <strong class="text-text-primary">Senior Laravel Developer</strong> with 5+ years of experience building scalable backend systems, 
                             leading development teams, and maintaining high-availability infrastructure. I specialize in Laravel, 
                             PHP, and DevOps practices, having successfully managed 23+ VPS servers with 99.9% uptime. 
@@ -122,9 +138,9 @@
                         </p>
                         
                         <!-- CTA Buttons -->
-                        <div class="flex gap-4 mb-12 flex-wrap">
+                        <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-8 sm:mb-12">
                             <a href="#contact" 
-                               class="inline-flex items-center gap-2 px-6 py-3 bg-bg-tertiary text-text-primary font-semibold text-sm rounded-md hover:bg-bg-secondary hover:-translate-y-1 hover:shadow-lg hover:shadow-accent-blue/30 transition-all">
+                               class="inline-flex items-center justify-center sm:justify-start gap-2 px-4 sm:px-6 py-3 bg-bg-tertiary text-text-primary font-semibold text-sm rounded-md hover:bg-bg-secondary hover:-translate-y-1 hover:shadow-lg hover:shadow-accent-blue/30 transition-all">
                                 <svg class="w-4 h-4" viewBox="0 0 16 16" fill="currentColor">
                                     <path d="M1.75 2A1.75 1.75 0 000 3.75v8.5C0 13.216.784 14 1.75 14h12.5A1.75 1.75 0 0016 12.25v-8.5A1.75 1.75 0 0014.25 2H1.75z"/>
                                 </svg>
@@ -132,7 +148,7 @@
                             </a>
                             <!-- PLACEHOLDER: Add link to your resume/CV PDF -->
                             <a href="/resume.pdf" download
-                               class="inline-flex items-center gap-2 px-6 py-3 bg-bg-secondary text-text-primary border border-border-color font-semibold text-sm rounded-md hover:bg-bg-tertiary hover:border-accent-blue transition-all">
+                               class="inline-flex items-center justify-center sm:justify-start gap-2 px-4 sm:px-6 py-3 bg-bg-secondary text-text-primary border border-border-color font-semibold text-sm rounded-md hover:bg-bg-tertiary hover:border-accent-blue transition-all">
                                 <svg class="w-4 h-4" viewBox="0 0 16 16" fill="currentColor">
                                     <path d="M4.75 8.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 114.5 0 2.25 2.25 0 01-4.5 0zM8 10a.75.75 0 100 1.5.75.75 0 000-1.5zM5.5 10.75a2.5 2.5 0 115 0 2.5 2.5 0 01-5 0z"/>
                                 </svg>
@@ -142,27 +158,27 @@
 
                         <!-- Technology Stack -->
                         <div>
-                            <h3 class="text-xl font-semibold mb-6 flex items-center gap-3">
+                            <h3 class="text-lg sm:text-xl font-semibold mb-4 sm:mb-6 flex items-center gap-3">
                                 <span class="w-1 h-6 bg-gradient-to-b from-accent-blue to-accent-purple rounded"></span>
                                 Technologies I Work With
                             </h3>
-                            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
-                                <div class="tech-badge px-4 py-2 bg-bg-secondary border border-border-color rounded-md text-sm font-semibold font-mono text-center hover:border-accent-blue hover:-translate-y-1 hover:shadow-lg hover:shadow-accent-blue/20 transition-all cursor-default text-red-400">Laravel</div>
-                                <div class="tech-badge px-4 py-2 bg-bg-secondary border border-border-color rounded-md text-sm font-semibold font-mono text-center hover:border-accent-blue hover:-translate-y-1 hover:shadow-lg hover:shadow-accent-blue/20 transition-all cursor-default text-indigo-400">PHP</div>
-                                <div class="tech-badge px-4 py-2 bg-bg-secondary border border-border-color rounded-md text-sm font-semibold font-mono text-center hover:border-accent-blue hover:-translate-y-1 hover:shadow-lg hover:shadow-accent-blue/20 transition-all cursor-default text-yellow-300">JavaScript</div>
-                                <div class="tech-badge px-4 py-2 bg-bg-secondary border border-border-color rounded-md text-sm font-semibold font-mono text-center hover:border-accent-blue hover:-translate-y-1 hover:shadow-lg hover:shadow-accent-blue/20 transition-all cursor-default text-text-primary">jQuery</div>
-                                <div class="tech-badge px-4 py-2 bg-bg-secondary border border-border-color rounded-md text-sm font-semibold font-mono text-center hover:border-accent-blue hover:-translate-y-1 hover:shadow-lg hover:shadow-accent-blue/20 transition-all cursor-default text-purple-400">Bootstrap</div>
-                                <div class="tech-badge px-4 py-2 bg-bg-secondary border border-border-color rounded-md text-sm font-semibold font-mono text-center hover:border-accent-blue hover:-translate-y-1 hover:shadow-lg hover:shadow-accent-blue/20 transition-all cursor-default text-cyan-400">Tailwind</div>
-                                <div class="tech-badge px-4 py-2 bg-bg-secondary border border-border-color rounded-md text-sm font-semibold font-mono text-center hover:border-accent-blue hover:-translate-y-1 hover:shadow-lg hover:shadow-accent-blue/20 transition-all cursor-default text-amber-400">FilamentPHP</div>
-                                <div class="tech-badge px-4 py-2 bg-bg-secondary border border-border-color rounded-md text-sm font-semibold font-mono text-center hover:border-accent-blue hover:-translate-y-1 hover:shadow-lg hover:shadow-accent-blue/20 transition-all cursor-default text-blue-400">MySQL</div>
-                                <div class="tech-badge px-4 py-2 bg-bg-secondary border border-border-color rounded-md text-sm font-semibold font-mono text-center hover:border-accent-blue hover:-translate-y-1 hover:shadow-lg hover:shadow-accent-blue/20 transition-all cursor-default text-green-500">MongoDB</div>
-                                <div class="tech-badge px-4 py-2 bg-bg-secondary border border-border-color rounded-md text-sm font-semibold font-mono text-center hover:border-accent-blue hover:-translate-y-1 hover:shadow-lg hover:shadow-accent-blue/20 transition-all cursor-default text-orange-500">Git</div>
-                                <div class="tech-badge px-4 py-2 bg-bg-secondary border border-border-color rounded-md text-sm font-semibold font-mono text-center hover:border-accent-blue hover:-translate-y-1 hover:shadow-lg hover:shadow-accent-blue/20 transition-all cursor-default text-text-primary">GitLab CI/CD</div>
-                                <div class="tech-badge px-4 py-2 bg-bg-secondary border border-border-color rounded-md text-sm font-semibold font-mono text-center hover:border-accent-blue hover:-translate-y-1 hover:shadow-lg hover:shadow-accent-blue/20 transition-all cursor-default text-yellow-400">Linux</div>
-                                <div class="tech-badge px-4 py-2 bg-bg-secondary border border-border-color rounded-md text-sm font-semibold font-mono text-center hover:border-accent-blue hover:-translate-y-1 hover:shadow-lg hover:shadow-accent-blue/20 transition-all cursor-default text-green-600">NGINX</div>
-                                <div class="tech-badge px-4 py-2 bg-bg-secondary border border-border-color rounded-md text-sm font-semibold font-mono text-center hover:border-accent-blue hover:-translate-y-1 hover:shadow-lg hover:shadow-accent-blue/20 transition-all cursor-default text-red-500">Redis</div>
-                                <div class="tech-badge px-4 py-2 bg-bg-secondary border border-border-color rounded-md text-sm font-semibold font-mono text-center hover:border-accent-blue hover:-translate-y-1 hover:shadow-lg hover:shadow-accent-blue/20 transition-all cursor-default text-text-primary">RunCloud</div>
-                                <div class="tech-badge px-4 py-2 bg-bg-secondary border border-border-color rounded-md text-sm font-semibold font-mono text-center hover:border-accent-blue hover:-translate-y-1 hover:shadow-lg hover:shadow-accent-blue/20 transition-all cursor-default text-text-primary">n8n</div>
+                            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-3">
+                                <div class="tech-badge px-2 sm:px-4 py-2 bg-bg-secondary border border-border-color rounded-md text-xs sm:text-sm font-semibold font-mono text-center hover:border-accent-blue hover:-translate-y-1 hover:shadow-lg hover:shadow-accent-blue/20 transition-all cursor-default text-red-400">Laravel</div>
+                                <div class="tech-badge px-2 sm:px-4 py-2 bg-bg-secondary border border-border-color rounded-md text-xs sm:text-sm font-semibold font-mono text-center hover:border-accent-blue hover:-translate-y-1 hover:shadow-lg hover:shadow-accent-blue/20 transition-all cursor-default text-indigo-400">PHP</div>
+                                <div class="tech-badge px-2 sm:px-4 py-2 bg-bg-secondary border border-border-color rounded-md text-xs sm:text-sm font-semibold font-mono text-center hover:border-accent-blue hover:-translate-y-1 hover:shadow-lg hover:shadow-accent-blue/20 transition-all cursor-default text-yellow-300">JavaScript</div>
+                                <div class="tech-badge px-2 sm:px-4 py-2 bg-bg-secondary border border-border-color rounded-md text-xs sm:text-sm font-semibold font-mono text-center hover:border-accent-blue hover:-translate-y-1 hover:shadow-lg hover:shadow-accent-blue/20 transition-all cursor-default text-text-primary">jQuery</div>
+                                <div class="tech-badge px-2 sm:px-4 py-2 bg-bg-secondary border border-border-color rounded-md text-xs sm:text-sm font-semibold font-mono text-center hover:border-accent-blue hover:-translate-y-1 hover:shadow-lg hover:shadow-accent-blue/20 transition-all cursor-default text-purple-400">Bootstrap</div>
+                                <div class="tech-badge px-2 sm:px-4 py-2 bg-bg-secondary border border-border-color rounded-md text-xs sm:text-sm font-semibold font-mono text-center hover:border-accent-blue hover:-translate-y-1 hover:shadow-lg hover:shadow-accent-blue/20 transition-all cursor-default text-cyan-400">Tailwind</div>
+                                <div class="tech-badge px-2 sm:px-4 py-2 bg-bg-secondary border border-border-color rounded-md text-xs sm:text-sm font-semibold font-mono text-center hover:border-accent-blue hover:-translate-y-1 hover:shadow-lg hover:shadow-accent-blue/20 transition-all cursor-default text-amber-400">FilamentPHP</div>
+                                <div class="tech-badge px-2 sm:px-4 py-2 bg-bg-secondary border border-border-color rounded-md text-xs sm:text-sm font-semibold font-mono text-center hover:border-accent-blue hover:-translate-y-1 hover:shadow-lg hover:shadow-accent-blue/20 transition-all cursor-default text-blue-400">MySQL</div>
+                                <div class="tech-badge px-2 sm:px-4 py-2 bg-bg-secondary border border-border-color rounded-md text-xs sm:text-sm font-semibold font-mono text-center hover:border-accent-blue hover:-translate-y-1 hover:shadow-lg hover:shadow-accent-blue/20 transition-all cursor-default text-green-500">MongoDB</div>
+                                <div class="tech-badge px-2 sm:px-4 py-2 bg-bg-secondary border border-border-color rounded-md text-xs sm:text-sm font-semibold font-mono text-center hover:border-accent-blue hover:-translate-y-1 hover:shadow-lg hover:shadow-accent-blue/20 transition-all cursor-default text-orange-500">Git</div>
+                                <div class="tech-badge px-2 sm:px-4 py-2 bg-bg-secondary border border-border-color rounded-md text-xs sm:text-sm font-semibold font-mono text-center hover:border-accent-blue hover:-translate-y-1 hover:shadow-lg hover:shadow-accent-blue/20 transition-all cursor-default text-text-primary">GitLab CI/CD</div>
+                                <div class="tech-badge px-2 sm:px-4 py-2 bg-bg-secondary border border-border-color rounded-md text-xs sm:text-sm font-semibold font-mono text-center hover:border-accent-blue hover:-translate-y-1 hover:shadow-lg hover:shadow-accent-blue/20 transition-all cursor-default text-yellow-400">Linux</div>
+                                <div class="tech-badge px-2 sm:px-4 py-2 bg-bg-secondary border border-border-color rounded-md text-xs sm:text-sm font-semibold font-mono text-center hover:border-accent-blue hover:-translate-y-1 hover:shadow-lg hover:shadow-accent-blue/20 transition-all cursor-default text-green-600">NGINX</div>
+                                <div class="tech-badge px-2 sm:px-4 py-2 bg-bg-secondary border border-border-color rounded-md text-xs sm:text-sm font-semibold font-mono text-center hover:border-accent-blue hover:-translate-y-1 hover:shadow-lg hover:shadow-accent-blue/20 transition-all cursor-default text-red-500">Redis</div>
+                                <div class="tech-badge px-2 sm:px-4 py-2 bg-bg-secondary border border-border-color rounded-md text-xs sm:text-sm font-semibold font-mono text-center hover:border-accent-blue hover:-translate-y-1 hover:shadow-lg hover:shadow-accent-blue/20 transition-all cursor-default text-text-primary">RunCloud</div>
+                                <div class="tech-badge px-2 sm:px-4 py-2 bg-bg-secondary border border-border-color rounded-md text-xs sm:text-sm font-semibold font-mono text-center hover:border-accent-blue hover:-translate-y-1 hover:shadow-lg hover:shadow-accent-blue/20 transition-all cursor-default text-text-primary">n8n</div>
                             </div>
                         </div>
                     </div>
@@ -170,8 +186,8 @@
             </section>
 
             <!-- Stats Section -->
-            <section class="fade-in-section mb-12">
-                <h3 class="text-xl font-semibold mb-6 flex items-center gap-3">
+            <section class="fade-in-section mb-8 sm:mb-12">
+                <h3 class="text-lg sm:text-xl font-semibold mb-4 sm:mb-6 flex items-center gap-3">
                     <span class="w-1 h-6 bg-gradient-to-b from-accent-blue to-accent-purple rounded"></span>
                     Career Highlights
                 </h3>
@@ -196,18 +212,18 @@
             </section>
 
             <!-- Experience Section -->
-            <section id="experience" class="fade-in-section mb-12">
-                <h3 class="text-xl font-semibold mb-6 flex items-center gap-3">
+            <section id="experience" class="fade-in-section mb-8 sm:mb-12">
+                <h3 class="text-lg sm:text-xl font-semibold mb-4 sm:mb-6 flex items-center gap-3">
                     <span class="w-1 h-6 bg-gradient-to-b from-accent-blue to-accent-purple rounded"></span>
                     Professional Experience
                 </h3>
                 
                 <div class="space-y-8">
                     <!-- Experience Item 1 -->
-                    <div class="experience-item relative bg-bg-secondary border border-border-color rounded-xl p-8 hover:border-accent-blue hover:translate-x-2 hover:shadow-lg hover:shadow-accent-blue/15 transition-all">
-                        <div class="flex justify-between items-start mb-4 flex-wrap gap-4">
+                    <div class="experience-item relative bg-bg-secondary border border-border-color rounded-xl p-4 sm:p-8 hover:border-accent-blue hover:translate-x-2 hover:shadow-lg hover:shadow-accent-blue/15 transition-all">
+                        <div class="flex justify-between items-start mb-4 flex-wrap gap-2 sm:gap-4">
                             <div>
-                                <h4 class="text-xl font-bold text-text-primary mb-1">Senior Software Developer</h4>
+                                <h4 class="text-lg sm:text-xl font-bold text-text-primary mb-1">Senior Software Developer</h4>
                                 <p class="text-accent-blue font-semibold">G2R SDN. BHD.</p>
                             </div>
                             <span class="text-text-secondary text-sm font-mono">July 2025 – Present</span>
@@ -229,10 +245,10 @@
                     </div>
 
                     <!-- Experience Item 2 -->
-                    <div class="experience-item relative bg-bg-secondary border border-border-color rounded-xl p-8 hover:border-accent-blue hover:translate-x-2 hover:shadow-lg hover:shadow-accent-blue/15 transition-all">
-                        <div class="flex justify-between items-start mb-4 flex-wrap gap-4">
+                    <div class="experience-item relative bg-bg-secondary border border-border-color rounded-xl p-4 sm:p-8 hover:border-accent-blue hover:translate-x-2 hover:shadow-lg hover:shadow-accent-blue/15 transition-all">
+                        <div class="flex justify-between items-start mb-4 flex-wrap gap-2 sm:gap-4">
                             <div>
-                                <h4 class="text-xl font-bold text-text-primary mb-1">HoU Software Developer</h4>
+                                <h4 class="text-lg sm:text-xl font-bold text-text-primary mb-1">HoU Software Developer</h4>
                                 <p class="text-accent-blue font-semibold">EMZI TECHNOLOGIES SDN. BHD.</p>
                             </div>
                             <span class="text-text-secondary text-sm font-mono">September 2022 – July 2025</span>
@@ -254,10 +270,10 @@
                     </div>
 
                     <!-- Experience Item 3 -->
-                    <div class="experience-item relative bg-bg-secondary border border-border-color rounded-xl p-8 hover:border-accent-blue hover:translate-x-2 hover:shadow-lg hover:shadow-accent-blue/15 transition-all">
-                        <div class="flex justify-between items-start mb-4 flex-wrap gap-4">
+                    <div class="experience-item relative bg-bg-secondary border border-border-color rounded-xl p-4 sm:p-8 hover:border-accent-blue hover:translate-x-2 hover:shadow-lg hover:shadow-accent-blue/15 transition-all">
+                        <div class="flex justify-between items-start mb-4 flex-wrap gap-2 sm:gap-4">
                             <div>
-                                <h4 class="text-xl font-bold text-text-primary mb-1">Full Stack Developer</h4>
+                                <h4 class="text-lg sm:text-xl font-bold text-text-primary mb-1">Full Stack Developer</h4>
                                 <p class="text-accent-blue font-semibold">INSPIRAZS SDN. BHD.</p>
                             </div>
                             <span class="text-text-secondary text-sm font-mono">January 2020 – August 2022</span>
@@ -279,10 +295,10 @@
                     </div>
 
                     <!-- Experience Item 4 -->
-                    <div class="experience-item relative bg-bg-secondary border border-border-color rounded-xl p-8 hover:border-accent-blue hover:translate-x-2 hover:shadow-lg hover:shadow-accent-blue/15 transition-all">
-                        <div class="flex justify-between items-start mb-4 flex-wrap gap-4">
+                    <div class="experience-item relative bg-bg-secondary border border-border-color rounded-xl p-4 sm:p-8 hover:border-accent-blue hover:translate-x-2 hover:shadow-lg hover:shadow-accent-blue/15 transition-all">
+                        <div class="flex justify-between items-start mb-4 flex-wrap gap-2 sm:gap-4">
                             <div>
-                                <h4 class="text-xl font-bold text-text-primary mb-1">Web Developer (Internship)</h4>
+                                <h4 class="text-lg sm:text-xl font-bold text-text-primary mb-1">Web Developer (Internship)</h4>
                                 <p class="text-accent-blue font-semibold">HUBZSOFT DIGITALS</p>
                             </div>
                             <span class="text-text-secondary text-sm font-mono">June – August 2018</span>
@@ -302,8 +318,8 @@
             </section>
 
             <!-- Featured Projects -->
-            <section id="projects" class="fade-in-section mb-12">
-                <h3 class="text-xl font-semibold mb-6 flex items-center gap-3">
+            <section id="projects" class="fade-in-section mb-8 sm:mb-12">
+                <h3 class="text-lg sm:text-xl font-semibold mb-4 sm:mb-6 flex items-center gap-3">
                     <span class="w-1 h-6 bg-gradient-to-b from-accent-blue to-accent-purple rounded"></span>
                     Featured Projects
                 </h3>
@@ -311,7 +327,7 @@
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
                     
                     <!-- Project Card 1 -->
-                    <div class="project-card relative bg-bg-secondary border border-border-color rounded-xl p-6 hover:border-accent-blue hover:-translate-y-1 hover:shadow-lg hover:shadow-accent-blue/20 transition-all cursor-pointer overflow-hidden">
+                    <div class="project-card relative bg-bg-secondary border border-border-color rounded-xl p-4 sm:p-6 hover:border-accent-blue hover:-translate-y-1 hover:shadow-lg hover:shadow-accent-blue/20 transition-all cursor-pointer overflow-hidden">
                         <div class="flex justify-between items-start mb-4">
                             <svg class="w-5 h-5 text-accent-blue" viewBox="0 0 16 16" fill="currentColor">
                                 <path d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"/>
@@ -330,7 +346,7 @@
                     </div>
 
                     <!-- Project Card 2 -->
-                    <div class="project-card relative bg-bg-secondary border border-border-color rounded-xl p-6 hover:border-accent-blue hover:-translate-y-1 hover:shadow-lg hover:shadow-accent-blue/20 transition-all cursor-pointer overflow-hidden">
+                    <div class="project-card relative bg-bg-secondary border border-border-color rounded-xl p-4 sm:p-6 hover:border-accent-blue hover:-translate-y-1 hover:shadow-lg hover:shadow-accent-blue/20 transition-all cursor-pointer overflow-hidden">
                         <div class="flex justify-between items-start mb-4">
                             <svg class="w-5 h-5" viewBox="0 0 160 120" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <!-- Left nodes and connections -->
@@ -364,7 +380,7 @@
                     </div>
 
                     <!-- Project Card 3 -->
-                    <div class="project-card relative bg-bg-secondary border border-border-color rounded-xl p-6 hover:border-accent-blue hover:-translate-y-1 hover:shadow-lg hover:shadow-accent-blue/20 transition-all cursor-pointer overflow-hidden">
+                    <div class="project-card relative bg-bg-secondary border border-border-color rounded-xl p-4 sm:p-6 hover:border-accent-blue hover:-translate-y-1 hover:shadow-lg hover:shadow-accent-blue/20 transition-all cursor-pointer overflow-hidden">
                         <div class="flex justify-between items-start mb-4">
                             <svg class="w-5 h-5 text-accent-blue" viewBox="0 0 16 16" fill="currentColor">
                                 <path d="M1.5 3.25c0-.966.784-1.75 1.75-1.75h9.5c.966 0 1.75.784 1.75 1.75v.5a.75.75 0 01-1.5 0v-.5a.25.25 0 00-.25-.25h-9.5a.25.25 0 00-.25.25v9.5c0 .138.112.25.25.25h9.5a.25.25 0 00.25-.25v-.5a.75.75 0 011.5 0v.5a1.75 1.75 0 01-1.75 1.75h-9.5A1.75 1.75 0 011.5 12.75v-9.5z"/>
@@ -445,37 +461,39 @@
             </section>
 
             <!-- Contact Section -->
-            <section id="contact" class="fade-in-section mb-12">
-                <h3 class="text-xl font-semibold mb-6 flex items-center gap-3">
+            <section id="contact" class="fade-in-section mb-8 sm:mb-12">
+                <h3 class="text-lg sm:text-xl font-semibold mb-4 sm:mb-6 flex items-center gap-3">
                     <span class="w-1 h-6 bg-gradient-to-b from-accent-blue to-accent-purple rounded"></span>
                     Let's Connect
                 </h3>
-                <div class="bg-bg-secondary border border-border-color rounded-xl p-12 text-center">
-                    <p class="text-lg text-text-secondary mb-6 max-w-2xl mx-auto">
+                <div class="bg-bg-secondary border border-border-color rounded-xl p-6 sm:p-12 text-center">
+                    <p class="text-base sm:text-lg text-text-secondary mb-6 max-w-2xl mx-auto">
                         I'm always interested in hearing about new projects and opportunities. 
                         Whether you have a question or just want to say hi, feel free to reach out!
                     </p>
-                    <div class="flex gap-4 justify-center flex-wrap">
+                    <div class="flex flex-col sm:flex-row gap-2 sm:gap-4 justify-center flex-wrap">
                         <a href="mailto:work@iqbal.my" 
-                           class="inline-flex items-center gap-2 px-6 py-3 bg-bg-tertiary text-text-primary border border-border-color font-semibold text-sm rounded-md hover:bg-bg-secondary hover:border-accent-blue transition-all">
+                           class="inline-flex items-center justify-center gap-2 px-4 sm:px-6 py-3 bg-bg-tertiary text-text-primary border border-border-color font-semibold text-sm rounded-md hover:bg-bg-secondary hover:border-accent-blue transition-all">
                             <svg class="w-4 h-4" viewBox="0 0 16 16" fill="currentColor">
                                 <path d="M1.75 2A1.75 1.75 0 000 3.75v8.5C0 13.216.784 14 1.75 14h12.5A1.75 1.75 0 0016 12.25v-8.5A1.75 1.75 0 0014.25 2H1.75z"/>
                             </svg>
-                            Send Email
+                            <span class="hidden xs:inline">Send Email</span>
+                            <span class="inline xs:hidden">Email</span>
                         </a>
                         <a href="https://my.linkedin.com/in/muhamad-iqbal" target="_blank" 
-                           class="inline-flex items-center gap-2 px-6 py-3 bg-bg-tertiary text-text-primary border border-border-color font-semibold text-sm rounded-md hover:bg-bg-secondary hover:border-accent-blue transition-all">
+                           class="inline-flex items-center justify-center gap-2 px-4 sm:px-6 py-3 bg-bg-tertiary text-text-primary border border-border-color font-semibold text-sm rounded-md hover:bg-bg-secondary hover:border-accent-blue transition-all">
                             <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286z"/>
                             </svg>
                             LinkedIn
                         </a>
                         <a href="https://wa.me/60146404320" target="_blank" 
-                           class="inline-flex items-center gap-2 px-6 py-3 bg-bg-tertiary text-text-primary border border-border-color font-semibold text-sm rounded-md hover:bg-bg-secondary hover:border-accent-blue transition-all">
+                           class="inline-flex items-center justify-center gap-2 px-4 sm:px-6 py-3 bg-bg-tertiary text-text-primary border border-border-color font-semibold text-sm rounded-md hover:bg-bg-secondary hover:border-accent-blue transition-all">
                             <svg class="w-4 h-4" viewBox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M16 3C9.373 3 4 8.373 4 15c0 2.637.86 5.08 2.36 7.09L4 29l7.18-2.31A12.93 12.93 0 0016 27c6.627 0 12-5.373 12-12S22.627 3 16 3zm0 22.917c-2.13 0-4.21-.62-5.97-1.79l-.43-.27-4.27 1.37 1.4-4.16-.28-.44A9.93 9.93 0 016 15c0-5.514 4.486-10 10-10s10 4.486 10 10-4.486 10-10 10zm5.47-7.6c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.27-.47-2.42-1.5-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.53.15-.18.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51-.17-.01-.37-.01-.57-.01-.2 0-.52.07-.8.37-.27.3-1.05 1.03-1.05 2.5 0 1.47 1.07 2.89 1.22 3.09.15.2 2.1 3.21 5.09 4.37.71.25 1.26.4 1.69.51.71.18 1.36.16 1.87.1.57-.07 1.77-.72 2.02-1.41.25-.69.25-1.28.18-1.41-.07-.13-.27-.2-.57-.35z"/>
                             </svg>
-                            WhatsApp
+                            <span class="hidden xs:inline">WhatsApp</span>
+                            <span class="inline xs:hidden">Chat</span>
                         </a>
                     </div>
                 </div>
@@ -484,16 +502,16 @@
     </main>
 
     <!-- Footer -->
-    <footer class="border-t border-border-color py-12 mt-20 text-center text-text-secondary">
-        <div class="max-w-7xl mx-auto px-6">
+    <footer class="border-t border-border-color py-8 sm:py-12 mt-12 sm:mt-20 text-center text-text-secondary">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
             <div class="flex flex-col items-center gap-4">
-                <div class="flex gap-6 text-sm">
+                <div class="flex flex-wrap justify-center gap-4 sm:gap-6 text-xs sm:text-sm">
                     <a href="#about" class="hover:text-accent-blue transition-colors">About</a>
                     <a href="#experience" class="hover:text-accent-blue transition-colors">Experience</a>
                     <a href="#projects" class="hover:text-accent-blue transition-colors">Projects</a>
                     <a href="#contact" class="hover:text-accent-blue transition-colors">Contact</a>
                 </div>
-                <p class="text-sm">
+                <p class="text-xs sm:text-sm">
                     © 2025 Muhamad Iqbal. Built with ❤️ using modern web technologies.
                 </p>
             </div>
